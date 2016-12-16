@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Our App!</title>
+  </head>
+  <body>
+    <h1>All of the Books</h1>
+    <ul>
+      <% @books.each do |book| %>
+        <li>
+          <a href="/books/<%=book.id %>"><%= book.title %></a>
+        </li>
+      <% end %>
+    </ul>
+  </body>
+</html>
